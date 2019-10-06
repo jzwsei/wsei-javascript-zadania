@@ -1,3 +1,4 @@
+// ex. 0
 function distFromAvarage(originalArray) {
     let sum = originalArray.reduce((prev, curr) => {
         return prev + curr;
@@ -12,4 +13,14 @@ function distFromAvarage(originalArray) {
     });
 
     return results;
+}
+
+//ex. 1
+let fruits = ['banan', 'pomarańcza', 'brzoskwinia', 'jabłko'];
+
+console.log(fruits[0]);
+console.log(fruits[fruits.length - 1]);
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
 }
