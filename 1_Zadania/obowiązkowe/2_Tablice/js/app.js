@@ -24,3 +24,10 @@ console.log(fruits[fruits.length - 1]);
 for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
 }
+
+//ex. 3
+function printArray(inArray) {
+    for (let index in inArray) {
+        console.log(inArray[index]);
+    }
+}
