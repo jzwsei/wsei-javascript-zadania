@@ -69,3 +69,25 @@ function getEvenAvarage(numbers) {
 function sortArray(numbers) {
     return numbers.sort((a, b) => a - b)
 }
+
+//ex. 7
+function addArrays(array1, array2) {
+    let result = [],
+        maxCounter = array1.length >= array2.length ? array1.length : array2.length,
+        i, value1, value2;
+
+    for (i = 0; i < maxCounter; i++) {
+        value1 = array1[i];
+        value2 = array2[i];
+
+        if (value1 !== undefined && value2 != undefined) {
+            result.push(value1 + value2);
+        } else if (value1 !== undefined) {
+            result.push(value1);
+        } else {
+            result.push(value2);
+        }
+    }
+
+    return result;
+}
