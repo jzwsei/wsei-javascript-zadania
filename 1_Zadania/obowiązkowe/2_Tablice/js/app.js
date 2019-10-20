@@ -31,3 +31,15 @@ function printArray(inArray) {
         console.log(inArray[index]);
     }
 }
+
+//ex. 4
+function multiply(numbers) {
+    let result = 1, 
+        i;
+
+    for (i = 0; i < numbers.length; i++) {
+        result *= numbers[i];
+    }
+
+    return result;
+}
