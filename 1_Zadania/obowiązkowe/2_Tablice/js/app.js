@@ -43,3 +43,24 @@ function multiply(numbers) {
 
     return result;
 }
+
+//ex. 5
+function getEvenAvarage(numbers) {
+    let numbersSum = 0,
+        numbersCount = 0;
+        
+    numbers.forEach(function(number) {
+        if (number % 2 !== 0) {
+            return;
+        }
+
+        numbersSum += number;
+        numbersCount++;
+    });
+
+    if (numbersCount === 0) {
+        return null;
+    }
+
+    return numbersSum / numbersCount;
+}
