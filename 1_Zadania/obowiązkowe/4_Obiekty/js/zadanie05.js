@@ -31,3 +31,45 @@ var animals = [
     }
 
 ]
+
+availableFields = {
+    type: {
+        name: 'Gatunek',
+        type: 'string'
+    },
+    breed: {
+        name: 'Rasa',
+        type: 'string'
+    },
+    name: {
+        name: 'Imię',
+        type: 'string'
+    },
+    health: {
+        name: 'Informacje zdrowotne',
+        type: 'health'
+    }
+};
+
+function writeRecord(record) {
+    let key, field, name, type, value;
+
+    for (key in record) {
+        field = availableFields[key];
+        name = field ? field.name + ': ' : '';
+        type = field ? field.type : '';
+
+        switch (type) {
+            case 'string':
+                value = record[key];
+                break;
+            case 'health':
+                value = 
+        }
+        value = type == 'array' ? record[key].join(', ') : record[key];
+
+        console.log(name + value)
+    }
+}
+
+writeRecord(movie);
