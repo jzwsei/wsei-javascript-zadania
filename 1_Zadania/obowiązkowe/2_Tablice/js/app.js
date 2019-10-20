@@ -64,3 +64,8 @@ function getEvenAvarage(numbers) {
 
     return numbersSum / numbersCount;
 }
+
+//ex. 6
+function sortArray(numbers) {
+    return numbers.sort((a, b) => a - b)
+}
