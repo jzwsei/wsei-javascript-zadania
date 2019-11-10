@@ -24,3 +24,17 @@ car.addCheck = function(date) {
 car.getChecks = function() { 
     return this.checkDates
 };
+
+//ex 3
+let stairs = {
+    step: 0,
+    up: function() {
+        this.step++;
+    },
+    down: function() {
+        this.step--;
+    },
+    printStep: function() {
+        console.log(this.step);
+    }
+};
