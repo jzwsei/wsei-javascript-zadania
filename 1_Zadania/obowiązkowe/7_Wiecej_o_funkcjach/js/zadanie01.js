@@ -5,21 +5,23 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+//sygnatura funkcji sortArray, rozpoczecie definiowania
 function sortArray() {
 
-    //Twoj komentarz ...
+    //utworzenie zmiennej points i przypisanie do niej tablicy liczb
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    //wykonanie na obiekcie tablicy metody 'sort' i przekazanie do niej callbacka definiującego metodę sortowania
     points.sort(function (a, b) {
-        //Twoj komentarz ...
+        //jeśli po odjęciu b od a wynik będzie ujemny, element a będzie uznany za mniejszy (zostanie przesunięty ku początkowi)
+        // -               ||                - równy 0, elementy zostana uznane za równe (zostaną na swoich pozycjach)
+        // -               ||                - dodatni, element a będzie uznany za większy (zostanie przesunięty ku końcowi)
         return a - b;
     });
 
-    //Twoj komentarz ...
+    //zwracamy posortowaną tablicę od najmniejszej do największej wartości
     return points;
 }
 
-//Twoj komentarz ...
+//wywołujemy funkcję 'sortArray', jednak nic nie robimy ze zwracaną wartością
 sortArray();
