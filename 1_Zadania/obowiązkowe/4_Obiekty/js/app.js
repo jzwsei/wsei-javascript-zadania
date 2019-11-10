@@ -50,3 +50,17 @@ let recipe = {
 recipe.ingredients = ['mąka', 'woda', 'cukier'];
 
 console.log(recipe);
+
+//ex 6
+var spoon = {
+    isExist: true
+}
+
+var fork = spoon;
+fork.isExist  = false;
+
+if (spoon.isExist) {
+    console.log('łyżka istnieje'); // no istnieje
+} else {
+    console.log('łyżka nie istnieje');
+}
