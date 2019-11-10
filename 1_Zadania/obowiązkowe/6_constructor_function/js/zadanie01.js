@@ -14,7 +14,7 @@ Robot.prototype.sayHi = function (toWho) {
 
 Robot.prototype.changeName = function (newname) {
     console.log("Robot " + this.name + "changes name to " + newname);
-    name = newname;
+    this.name = newname;
 };
 
 Robot.prototype.fixIt = function () {
