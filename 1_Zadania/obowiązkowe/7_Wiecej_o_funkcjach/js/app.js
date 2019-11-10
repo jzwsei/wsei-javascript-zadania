@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//sygnatura funkcji 'jeden', rozpoczecie definiowania
 function jeden() {
 
-    //Twoj komentarz ...
+    //definicja zmiennej 'zmienna1' i przypisanie wartości int '1'
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //sygnatura funkcji 'dwa', rozpoczecie definiowania
     function dwa() {
 
-        //Twoj komentarz ...
+        //wypisanie w konsoli wartości zmiennej 'zmienna1'
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //definicja zmiennej 'zmienna2' i przypisanie wartości int '3'
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //wywołanie funkcji 'dwa' która wyświetli w konsoli '1'
     dwa();
 
-    //Twoj komentarz ...
+    //próba wyświetlenia w konsoli wartości zmiennej 'zmienna2' która jednak nie istnieje w tym scope'ie, rzuci ReferenceError
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//wywołanie funkcji 'jeden' ktora wyświetli w konsoli '1' i rzuci ReferenceError 
 jeden()
