@@ -64,12 +64,18 @@ function writeRecord(record) {
                 value = record[key];
                 break;
             case 'health':
-                value = 
+                value = [];
+                for (let healthValue of record[key]) {
+                    value.push('Data wizyty: ' + healthValue.date + ', typ wizyty: ' + healthValue.visitType);
+                }
+                value = value.join(' | ');
+                break;
         }
-        value = type == 'array' ? record[key].join(', ') : record[key];
 
         console.log(name + value)
     }
 }
 
-writeRecord(movie);
+for (let i in animals) {
+    writeRecord(animals[i]);
+}
