@@ -12,3 +12,7 @@ callOtherFunction(function (a, b) {
     console.log("Wynik", a + b)
 })
 
+//dzielenie
+callOtherFunction(function(a, b) {
+    console.log(a + '/' + b + '=' + (a/b));
+});
