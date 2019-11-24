@@ -9,4 +9,23 @@ document.addEventListener("DOMContentLoaded", function () {
     Poniżej napisz kod rozwiązujący zadania
      */
 
+     // ex 0
+     // elementy nie zawierają atrybutów "data", tylko "data-color"
+     function getDatasInfo(elements) {
+        let datasArray = [];
+
+        for (let item of elements) {
+            datasArray.push(item.attributes['data-color'].value);
+        }
+
+        return datasArray;
+     }
+
+     console.log(getDatasInfo(links));
+
+     // ex 1
+     console.log(homeElement, childElements, banner, blocks, links);
+
+     // --  nieskończone --
+
 });
