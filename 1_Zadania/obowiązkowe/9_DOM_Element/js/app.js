@@ -24,8 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
      console.log(getDatasInfo(links));
 
      // ex 1
-     console.log(homeElement, childElements, banner, blocks, links);
+     let elementsArray = [homeElement, childElements, banner, blocks, links];
+     console.log(elementsArray);
 
-     // --  nieskończone --
+     for (let collection of elementsArray) {
+         if (!(collection instanceof HTMLCollection)) {
+             continue;
+         }
 
+         for (let collectionItem of collection) {
+             console.log(collectionItem.tagName, collectionItem.className);
+         }
+     }
 });
