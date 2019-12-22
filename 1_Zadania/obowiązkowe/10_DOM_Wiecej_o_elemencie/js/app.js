@@ -37,4 +37,33 @@ document.addEventListener("DOMContentLoaded", function () {
     browserDivs[2].querySelector('a').href = 'https://www.mozilla.org/pl/firefox/new/';
 
     browserDivs[0].querySelector('div').style.width = '100px';
+
+    // ex 2
+    let name = window.document.querySelector('#name'),
+        favColor = window.document.querySelector('#fav_color'),
+        favMeal = window.document.querySelector('#fav_meal');
+    
+    name.innerHTML = 'Jarosław';
+    favColor.innerHTML = 'żółty';
+    favMeal.innerHTML = 'naleśniki';
+
+    // ex 3
+    let ul = window.document.querySelector('.ex3 ul');
+    ul.classList.add('menu');
+
+    for (item of ul.querySelectorAll('li')) {
+        item.classList.add('menuElement');
+    }
+
+    let errorElements = window.document.querySelectorAll('.error');
+    for (item of errorElements) {
+        item.classList.remove('error');
+    }
+
+    // ex 4
+    let counter = 1;
+    for (item of window.document.querySelectorAll('.ex4 li')) {
+        item.setAttribute('data-id', counter);
+        counter++;
+    }
 });
